@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security" th:with="lang=${#locale.language}" th:lang="${lang}">
+
+<head th:replace="layouts/main :: htmlhead"/>
+<body>
+
+<nav th:replace="layouts/main :: navigation" />
+
+<div class="container pt-4">
+    <div class="row d-flex justify-content-center">
+        <div class="col-auto">
+            <div class="jumbotron">
+                <h1 class="display-4">CRUD App</h1>
+                <p class="lead">CRUD App using Spring MVC, Hibernate, Spring Security, Thymeleaf</p>
+                <hr class="my-4"/>
+
+                <th:block sec:authorize="isAuthenticated()">
+                    <p class="font-weight-bold">You authenticated as <span sec:authentication="name"/></p>
+                    <hr class="my-4"/>
+                    <p><a type="button" th:href="@{/logout}" class="btn btn-secondary bg-secondary text-white">Logout</a></p>
+                </th:block>
+
+                <th:block th:if="${authenticationName}">
+                    <p class="font-weight-bold" th:text="|Good bye, ${authenticationName}!|"/>
+                    <hr class="my-4"/>
+                </th:block>
+
+                <p>In first time using <b>admin : admin</b></p>
+                <hr class="my-4"/>
+
+                <th:block sec:authorize="!isAuthenticated()">
+                    <p>Sign in for access</p>
+                    <form th:method="POST" th:action="@{/}">
+                        <div class="form-row">
+                            <div class="col-6 mb-3">
+                                <input type="text" class="form-control" name="email" th:value="${authenticationException.getEmail()}" placeholder="Email (login)" autofocus="autofocus" required>
+                            </div>
+                            <div class="col-6 mb-3">
+                                <input type="password" class="form-control" name="password" th:value="${authenticationException.getPassword()}" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-start align-items-center form-row">
+                            <div class="mr-3">
+                                <button type="submit" class="btn btn-secondary">Sign in</button>
+                            </div>
+                            <div th:if="${authenticationException.getMessage()}" class="alert alert-danger mb-0" role="alert" th:text="${authenticationException.getMessage()}"/>
+                        </div>
+                    </form>
+                </th:block>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div th:replace="layouts/main :: footer"></div>
+</body>
+</html>
