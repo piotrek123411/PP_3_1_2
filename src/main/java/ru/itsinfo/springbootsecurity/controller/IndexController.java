@@ -2,14 +2,9 @@ package ru.itsinfo.springbootsecurity.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.SessionAttribute;
-import ru.itsinfo.springbootsecurity.config.exception.LoginException;
 import ru.itsinfo.springbootsecurity.service.AppService;
-
-import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/")
@@ -22,10 +17,7 @@ public class IndexController {
 	}
 
 	@GetMapping("")
-	public String welcomePage(Model model, HttpSession session,
-							  @SessionAttribute(required = false, name = "Authentication-Exception") LoginException authenticationException,
-							  @SessionAttribute(required = false, name = "Authentication-Name") String authenticationName) {
-		appService.authenticateOrLogout(model, session, authenticationException, authenticationName);
+	public String welcomePage() {
 		return "index";
 	}
 

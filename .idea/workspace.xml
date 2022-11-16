@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87dca8db-ca35-401e-bb7e-598958f9e581" name="Changes" comment="" />
+    <list default="true" id="87dca8db-ca35-401e-bb7e-598958f9e581" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/ServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/ServletInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/SpringBootSecurityUsersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/SpringBootSecurityUsersApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/config/ApplicationSecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/config/PasswordConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/config/exception/LoginException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/config/handler/CustomAccessDeniedHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/config/handler/CustomAuthenticationFailureHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/config/handler/CustomAuthenticationSuccessHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/config/handler/CustomUrlLogoutSuccessHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/service/AppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/service/AppService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/service/AppServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/itsinfo/springbootsecurity/service/AppServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,6 +55,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2Gx7oM87wWM4wpS3rzVTab37psJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,7 +86,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="SpringBootSecurityUsersApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" />
       <module name="spring-boot-security-users" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.itsinfo.springbootsecurity.SpringBootSecurityUsersApplication" />
       <method v="2">
@@ -95,7 +111,10 @@
       <workItem from="1667917499005" duration="528000" />
       <workItem from="1668005515013" duration="17000" />
       <workItem from="1668006855176" duration="456000" />
-      <workItem from="1668436814619" duration="368000" />
+      <workItem from="1668436814619" duration="659000" />
+      <workItem from="1668437667461" duration="795000" />
+      <workItem from="1668522307914" duration="12000" />
+      <workItem from="1668618162062" duration="516000" />
     </task>
     <servers />
   </component>

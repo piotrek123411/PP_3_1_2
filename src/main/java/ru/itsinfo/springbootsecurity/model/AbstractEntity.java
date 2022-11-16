@@ -12,16 +12,8 @@ public class AbstractEntity implements Serializable {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     protected Long id;
 
-    public boolean persisted() {
-        return id != null;
-    }
-
     public Long getId() {
         return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
     }
 
     @Override
